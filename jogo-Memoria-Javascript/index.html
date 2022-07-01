@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Memoria Javascript</title>
+  <!--    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/libs/selectize.default.css">
+    <link rel="stylesheet" href="./css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+     crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" 
+integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>--> 
+ <link rel="stylesheet" href="css/style.css">
+
+</head>    <script src="js/memoria.js" defer></script>
+<body>
+    <div class="container">
+        <h1> Jogo de Memória</h1>
+        <h6>on-line</h6>
+        <div id="memoria">
+            <div class="row"><div class="col">
+                <p id="tempo">00:00</p>
+            </div></div>
+            <div id="imagens">
+                <div class="row">
+                    <div class="col-3">
+                        <img  id="i0" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i1"crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i2" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i3" crossorigin="anonymous" />
+                    </div>
+                    
+                </div><br>
+                <div class="row">
+                    <div class="col-3">
+                        <img  id="i4" crossorigin="anonymous" />
+                    </div>
+                     <div class="col-3">
+                        <img  id="i5" crossorigin="anonymous" />
+                    </div>
+                   
+                    <div class="col-3">
+                        <img  id="i6" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i7" crossorigin="anonymous" />
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-3">
+                        <img  id="i8" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i9" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i10" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img id="i11" crossorigin="anonymous" />
+                    </div>    
+                </div><br>
+                <div class="row">
+                    <div class="col-3">
+                        <img id="i12" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i13" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i14" crossorigin="anonymous" />
+                    </div>
+                    <div class="col-3">
+                        <img  id="i15" crossorigin="anonymous" />
+                    </div><br> 
+                    <!-----------------
+                    <div class="row">
+                        <div class="col-3">
+                            <img  id="i16" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i17"crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i18" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i19" crossorigin="anonymous" />
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-3">
+                            <img  id="i20" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i21" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i22" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i23" crossorigin="anonymous" />
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-3">
+                            <img  id="i24" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i9" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i25" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img id="i26" crossorigin="anonymous" />
+                        </div>    
+                    </div><br>
+                    <div class="row">
+                        <div class="col-3">
+                            <img id="i27" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i13" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i28" crossorigin="anonymous" />
+                        </div>
+                        <div class="col-3">
+                            <img  id="i29" crossorigin="anonymous" />
+                        </div>---------------> <br>    
+                </div>    
+            </div> 
+            <div id="rodape" class="row">
+                <div class="col">
+                    <button id="btnInicio" type="button" class="btn btn-primary btn-large">Iniciar</button>
+                </div>
+                <div class="row mt-5">
+                <div class="col">
+                    <ul id="scores">
+                        <h6>Paulo Franco - 01/07/2022</h6>
+                        <h4>Ultimos Tempos</h4>
+                    </ul>
+                </div>
+            </div>
+            </div> 
+        </div>
+        
+    </div>
+</body>
+</html>
